@@ -14,7 +14,7 @@ from src.models.bimpm_ce import BIMPMCrossEntropy
 from src.models.bimpm_mse import BIMPMMse
 from src.models.mvan_ce import MVANCrossEntropy
 from src.models.mvan_mse import MVANMse
-from setproctitle import setproctitle
+# from setproctitle import setproctitle
 from torch.utils.data.dataloader import DataLoader
 import torch.optim as optim
 from torch.nn.utils.rnn import pad_sequence
