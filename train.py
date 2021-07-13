@@ -36,7 +36,7 @@ class Train(nn.Module):
     set_seed(self.cfg.seed_num)
     torch.set_num_threads(self.cfg.cpu_workers)
     title = "CHAD_%d_MODEL_%s" % (self.cfg.batch_size, self.cfg.model)
-    setproctitle(title)
+    # setproctitle(title)
     self._logger = logging.getLogger(__name__)
     
   def _load_data(self, dataset_path: str):

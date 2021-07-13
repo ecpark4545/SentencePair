@@ -2,10 +2,10 @@
 gpu: "7" # "0,1,2,3"
 cpu_workers: 4
 seed_num: 7777
-title: "CHAD"
+title: "---"
 save: True
-data_path: './SentencePair/raw_data'
-save_path: './SentencePair/save'
+data_path: '../SentencePair/raw_data'
+save_path: '../SentencePair/save'
 checkpoint: 'checkpoints'
 #previous_weight: "/base_mse_32_0.001000/checkpoints/checkpoint_4.pth"
 previous_weight: "" # for ensemble you should put file path
