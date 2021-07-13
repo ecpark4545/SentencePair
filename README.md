@@ -73,6 +73,10 @@ python main.py --cfg_file cfg/base.yml --bs 128 --gpu 2 --lr 1e-4 --model mvan -
 # base model (SiameseLSTM) 
 python main.py --bs 64 --lr 1e-3 --hs 128 --es 128 --loss_type mse --pred
 
+or
+
+python main.py --bs 64 --lr 1e-3 --hs 128 --es 128 --loss_type mse --pred --inference checkpoint.pth
+
 ```
 ETC
 -------------
