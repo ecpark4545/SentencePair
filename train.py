@@ -89,9 +89,9 @@ class Train(nn.Module):
     print("=" * 80)
     print(f'Building model...{self.cfg.model}')
     print(f"GPU: {torch.cuda.is_available()}")
-    if self.cfg.previous_weight == "":
-      self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-      self.start_epoch = 1
+    
+    self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    self.start_epoch = 1
       
     if self.cfg.model == 'esim':
       if self.cfg.classification:
