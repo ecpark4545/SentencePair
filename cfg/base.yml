@@ -1,0 +1,38 @@
+#general
+gpu: "7" # "0,1,2,3"
+cpu_workers: 4
+seed_num: 7777
+title: "CHAD"
+save: True
+data_path: '/home/chad/sentence/raw_data'
+save_path: '/home/chad/sentence/save'
+checkpoint: 'checkpoints'
+#previous_weight: "/base_mse_32_0.001000/checkpoints/checkpoint_4.pth"
+previous_weight: "" # for ensemble you should put file path
+previous_weights: "/best_weights" # for ensemble you should put directory path
+loss_type: 'mse'
+max_len: 20
+predict_single: False
+predict_ensemble: False
+
+# network
+model: 'base'
+drop_rate: 1
+hidden_size: 128
+embedding_size: 128
+vocab_size: 30007
+batch_size: 32
+num_perspective: 20
+
+
+# ops
+classification: False
+num_epoch: 5 #
+optimizer: "adam" # adamw
+beta1: 0.9
+beta2: 0.999
+wd: 0 # weight_decay
+learning_rate: 1e-3
+lr_decay: False
+
+

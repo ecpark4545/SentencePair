@@ -1,0 +1,5 @@
+setproctitle==1.2.2
+easydict==1.9
+PyYAML==5.4.1
+tensorboard==2.5.0
+tqdm==4.61.2
