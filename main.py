@@ -56,6 +56,7 @@ parser.add_argument('--ops', dest='optimizer', default='adam', type=str, help='(
 parser.add_argument('--loss_type',  default='mse', type=str, help='(|ce|mse|)')
 parser.add_argument('--cls', dest='classification',action='store_true', help='|ce|mse|')
 parser.add_argument('--pred', dest='predict',action='store_true', help='only predict')
+parser.add_argument('--inference', dest="previous_weight" ,type=str, default='""', help='pretrained_weights')
 
 
 
