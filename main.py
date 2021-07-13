@@ -14,7 +14,7 @@ from pred import Pred
 
 def train_model(cfg):
   save_dir = cfg.save_path
-  save_dir += f"/{cfg.model}_{cfg.loss_type}_{cfg.batch_size}_{float(cfg.learning_rate):.6f}"
+  save_dir += f"/{cfg.model}"
   logger = init_logger(save_dir)
   logger.info("Hyper-parameters: %s" % str(cfg))
   cfg.save_path = save_dir
